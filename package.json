@@ -1,0 +1,22 @@
+{
+  "name": "mono-repo",
+  "private": true,
+  "packageManager": "yarn@1.22.19",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{js,jsx,md}\"",
+    "___comment___": "<--- Add single entry point to apps here __ eg: yarn workspace app-name --->"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "*",
+    "prettier": "^2.5.1",
+    "turbo": "latest"
+  }
+}
