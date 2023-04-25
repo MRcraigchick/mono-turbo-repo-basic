@@ -1,0 +1,10 @@
+@tailwind utilities;
+
+@layer utilities {
+  .blue-text {
+    color: blue;
+  }
+  .red-text {
+    color: red;
+  }
+}

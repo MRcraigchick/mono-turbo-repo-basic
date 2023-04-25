@@ -1,22 +1,25 @@
 {
-  "name": "mono-repo",
+  "name": "turborepo-basic-shared",
+  "version": "0.0.0",
   "private": true,
-  "packageManager": "yarn@1.22.19",
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev",
+    "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{js,jsx,md}\"",
-    "___comment___": "<--- Add single entry point to apps here __ eg: yarn workspace app-name --->"
+    "format": "prettier --write \"**/*.{js, jsx, ts,tsx,md}\""
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-custom": "*",
+    "@tailwindcss/forms": "^0.5.3",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.6",
     "prettier": "^2.5.1",
-    "turbo": "latest"
-  }
+    "prettier-plugin-tailwindcss": "^0.1.7",
+    "tailwindcss": "^3.0.23",
+    "turbo": "^1.9.3"
+  },
+  "packageManager": "yarn@1.22.17"
 }
