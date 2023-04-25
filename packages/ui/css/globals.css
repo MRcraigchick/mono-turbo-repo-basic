@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "ui/tailwind/utility-classes/index.css";
+@import './utility-classes/index.css';
+@import './variubles/fonts.css';
+@import './variubles/theme.css';
 
 * {
   padding: 0;
