@@ -1,0 +1,23 @@
+
+GET http://localhost:8001/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjQwNTE3MzViOWQwMWEwZWRhMDY3MGI5IiwiaWF0IjoxNjc4MTEyMDE0LCJleHAiOjE2NzgxMTIwMjl9.1NB75f3NRtJk0YOfZzlQqMN1G0i3mCOd6qziWGVYhno
+
+###
+
+PUT http://localhost:8001/user/update
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjQwNTBlZDQyNTAyYjcyNmQ1ZWFjMzAxIiwiaWF0IjoxNjc4MDUzMDc2fQ.ii-8q4pLzP63TmKcPDQfkK2Ch2SAE2u98Qn3iFvja5w
+
+{
+    "firstName": "Mary",
+    "lastName": "Jane",
+    "email": "maryjane@gmail.com"
+}
+
+###
+
+
+DELETE http://localhost:8001/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjQwNTBlZDQyNTAyYjcyNmQ1ZWFjMzAxIiwiaWF0IjoxNjc4MDUzMDc2fQ.ii-8q4pLzP63TmKcPDQfkK2Ch2SAE2u98Qn3iFvja5w
+
+

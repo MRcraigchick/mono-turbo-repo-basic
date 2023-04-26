@@ -1,0 +1,39 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "run": "yarn --cwd",
+    "start": "concurrently \"yarn auth-start\" \"yarn app-start\"",
+    "dev": "concurrently \"yarn auth-dev\" \"yarn app-dev\"",
+    "auth-start": "node auth/auth.js",
+    "auth-dev": "nodemon auth/auth.js",
+    "app-start": "node app/app.js",
+    "app-dev": "nodemon app/app.js"
+  },
+  "_moduleAliases": {
+    "@": "."
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "chalk": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "date-fns": "^2.29.3",
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "helmet": "^6.0.1",
+    "jsonwebtoken": "^9.0.0",
+    "module-alias": "^2.2.2",
+    "mongoose": "^6.6.1",
+    "morgan": "^1.10.0",
+    "node-fetch": "^3.2.10",
+    "util": "*"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

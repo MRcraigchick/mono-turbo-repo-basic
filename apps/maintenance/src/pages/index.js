@@ -1,6 +1,5 @@
 import { PageLayout } from '@/components/shared/containers/containers';
 import { Button } from 'ui/tailwind/buttons/index';
-import * as date from 'date-fns';
 
 export default function Index() {
   return (

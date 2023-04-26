@@ -3,20 +3,27 @@
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "ui": "*"
+    "@hookform/resolvers": "^3.1.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "react-hook-form": "^7.43.9",
+    "react-redux": "^8.0.5",
+    "redux-persist": "^6.0.0",
+    "yup": "^1.1.1",
+    "ui": "*",
+    "modules": "*"
   },
   "devDependencies": {
     "config": "*",
     "eslint": "8.9.0",
     "next-transpile-modules": "9.0.0"
   },
-  "name": "web",
+  "name": "main",
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start -p 3001"
   },
   "version": "0.0.0"
 }
