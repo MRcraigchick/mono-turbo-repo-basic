@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "next": "12.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "@hookform/resolvers": "^3.1.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "react-hook-form": "^7.43.9",
+    "react-redux": "^8.0.5",
+    "redux-persist": "^6.0.0",
+    "yup": "^1.1.1",
+    "ui": "*"
+  },
+  "devDependencies": {
+    "config": "*",
+    "eslint": "8.9.0",
+    "next-transpile-modules": "9.0.0"
+  },
+  "name": "maintenance",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev -p 3002",
+    "lint": "next lint",
+    "start": "next start -p 3002"
+  },
+  "version": "0.0.0"
+}

@@ -1,19 +1,24 @@
-import { PageLayout } from '@/components/shared/containers/containers';
-import { Button } from 'ui/tailwind/buttons/index';
+import { PageLayout } from 'ui/un-styled/containers';
+import { ViewboxImage } from 'ui/tailwind/images';
+import { Wave } from 'ui/svgs/animated';
 
 export default function Index() {
   return (
     <PageLayout
-      mainContainerClass=''
-      navbar={true}>
-      <div className='scrollbar-none header'>
-        <h1 className='red-text text-7xl font-bold'>Mono Repo</h1>
-        <Button
-          href='/about'
-          className='mx-auto max-w-[200px]'>
-          Button Link
-        </Button>
-      </div>
+      title='Yasha'
+      mainContainerClass='overflow-x-hidden'>
+      {/* <ViewboxImage
+        viewboxProps={{
+          className: '',
+        }}
+        imageProps={{
+          src: '/images/gradients/gradient-1.png',
+          alt: 'Background gradient',
+        }}
+      /> */}
+      <div className='h-[500px]'></div>
+      <Wave />
+      <div className='h-[500px]'></div>
     </PageLayout>
   );
 }

@@ -1,5 +1,5 @@
 {
-  "name": "turborepo-basic-shared",
+  "name": "yasha",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -10,7 +10,9 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{js, jsx, ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{js, jsx, ts,tsx,md}\"",
+    "main": "yarn workspace main",
+    "maintenance": "yarn workspace maintenance"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",

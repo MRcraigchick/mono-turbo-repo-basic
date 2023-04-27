@@ -1,9 +1,0 @@
-{
-  "name": "auth",
-  "type": "module",
-  "version": "0.0.0",
-  "scripts": {
-    "start": "node auth.js",
-    "dev": "nodemon auth.js"
-  }
-}
